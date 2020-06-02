@@ -25,7 +25,7 @@ export const purchaseburgerStart=()=>{
 export const purchaseburger=(orderData)=>{
   return dispatch=>{
     dispatch(purchaseburgerStart())
-    axios.post( 'https://react-my-burger-52295.firebaseio.com/orders.json', orderData )
+    axios.post( '', orderData )
         .then( response => {
             dispatch(purchaseburgerSuccess(response.data,orderData))
         } )
